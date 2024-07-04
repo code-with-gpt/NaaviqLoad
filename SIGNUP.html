@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign-in page</title>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #0879c4, #b008f3);
+        }
+
+        .sign-up {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border: 3px solid black;
+        }
+
+        .sign-up h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .sign-up form {
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        .sign-up input[type="text"], .sign-up input[type="password"] {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .sign-up input[type="submit"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #9b59b6;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .sign-up input[type="submit"]:hover {
+            background: #71b7e6;
+        }
+
+        .sign-up input[type="text"]:focus, .sign-up input[type="password"]:focus {
+            border-color: #9b59b6;
+            outline: none;
+            box-shadow: 0 0 5px rgba(155, 89, 182, 0.5);
+        }
+    </style>
+     
+    </style>
+</head>
+
+<div class="sign-up">
+    <h1>Sign Up</h1>
+    <form action="sign-up.php" method="post">
+        <input type="text" name="name" placeholder="Name">
+        <input type="text" name="email" placeholder="Email">
+        <input type="text" name="password" placeholder="Password">
+        <input type="text" name="phone" placeholder="Phone">
+        <input type="text" name="address" placeholder="Address">
+        <input type="submit" name="submit" value="Sign Up">
+    </form>
+</div>
+
+
+<body>
+    
+</body>
+</html>
